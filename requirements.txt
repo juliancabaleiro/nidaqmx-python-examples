@@ -1,0 +1,6 @@
+nidaqmx==0.8.0
+h5py==2.10.0
+pyvisa==1.12.0
+matplotlib==3.5.3
+npTDMS==1.0.0
+dash==2.15.0
