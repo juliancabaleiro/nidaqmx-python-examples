@@ -50,8 +50,13 @@ with nidaqmx.Task(new_task_name="PCI-CO") as co_task, nidaqmx.Task(new_task_name
                                                 low_time=1.0,
                                                 high_time=10.0)
     
-    #Configuro la adquisicion
-    ai_task.ai_channels.add_ai_voltage_chan("Dev1/ai0:1",min_val=-10.0,max_val=10.0) #Dev1/ai0:4
+    #Configuro la adquisicion #Dev1/ai0:4
+    ai_task.ai_channels.add_ai_voltage_chan(physical_channel="Dev1/ai0:1",
+                                            min_val=-10.0,
+                                            max_val=10.0,
+                                            terminal_config= nidaqmx.constants.TerminalConfiguration.DIFF,
+                                            units=nidaqmx.constants.VoltageUnits.VOLTS
+                                            )
     frecuencia=800_000
     ai_task.timing.cfg_samp_clk_timing(rate=frecuencia,
                                            active_edge=nidaqmx.constants.Edge.RISING,

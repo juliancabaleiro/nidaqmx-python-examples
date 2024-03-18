@@ -30,7 +30,10 @@ with nidaqmx.Task(new_task_name="PCI-PY") as task:
     #add phisical channels
     task.ai_channels.add_ai_voltage_chan(physical_channel="Dev1/ai0",
                                          min_val=-10.0,
-                                         max_val=10.0)
+                                         max_val=10.0,
+                                         terminal_config= nidaqmx.constants.TerminalConfiguration.DIFF,
+                                         units=nidaqmx.constants.VoltageUnits.VOLTS
+                                         )
     
     #add timing configuration from the adquisition
     task.timing.cfg_samp_clk_timing(rate=10000,

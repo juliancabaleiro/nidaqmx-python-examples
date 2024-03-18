@@ -23,7 +23,10 @@ with nidaqmx.Task(new_task_name="PCI-TDMS") as tdms_task:
     #add analog input channel
     tdms_task.ai_channels.add_ai_voltage_chan(physical_channel="Dev1/ai0:Dev1/ai1",
                                               min_val=-10.0,
-                                              max_val=10.0)
+                                              max_val=10.0,
+                                              terminal_config= nidaqmx.constants.TerminalConfiguration.DIFF,
+                                              units=nidaqmx.constants.VoltageUnits.VOLTS
+                                              )
     #Timing adquisition configuration
     tdms_task.timing.cfg_samp_clk_timing(rate=10000,
                                          active_edge=nidaqmx.constants.Edge.RISING,
