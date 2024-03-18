@@ -29,14 +29,14 @@ BNC-2110 the signal have noise.
 
 ![alt text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/adqui_dig_trig.png)
 
-## pause trigger
+## ang_pause_trigger
 When the signal is exceeds 2.5 V, the acquisition stop and when the signal
 falls below 2.5 V, the acquisition continues. The reader method append 
 the acquisition until acquire the number of samples requested, if the 
 method does not achieve the requested number of samples because the 
 acquisition has been paused for a long time, you will receive an 
-time out error.
-This boards support a pause trigger see the TDMS_trig too.
+time out error.  
+See the TDMS_trig too.
 
 ![alt text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/pause_trig_board.png)
 
