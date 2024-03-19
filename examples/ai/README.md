@@ -1,7 +1,7 @@
 # Analog Input Examples
 
 Here you can find the differents waveforms acquired with different analog input method from PCI-6133.
-This board only support differential mode in acquisition mode, if you change to ground refenrence in
+This board only support differential mode in acquisition mode, if you change to ground reference in
 BNC-2110 the signal have noise.
 ## loop_continuos_mode
 
