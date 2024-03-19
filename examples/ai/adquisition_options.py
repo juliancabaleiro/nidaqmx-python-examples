@@ -56,7 +56,7 @@ with nidaqmx.Task(new_task_name="PCI-PY") as task:
                             number_of_samples_per_channel=10000, 
                             timeout=10.0)
     
-    print("\nStream_reader many sample length: ",len(data))
+    print("\nStream_reader many sample length: ",data.shape)
     print("Some mearuments: ",data[0,0:3])
     print("Data type: ",type(data[0]))
 
@@ -77,7 +77,7 @@ Data type:  <class 'float'>
 strem_reader one sample : [-0.20019531]
 Data type:  <class 'numpy.ndarray'>
 
-Stream_reader many sample length:  1
+Stream_reader many sample length:  (1, 10000)
 Some mearuments:  [-0.20019531 -0.19897461 -0.19775391]
 Data type:  <class 'numpy.ndarray'>
 """
