@@ -5,7 +5,7 @@ The idea is to share examples with the simplest possible use of python so as  no
 
 ## Overview
 
-To improve measurement systems we need to program different instruments, many can be programmed using [pyvisa](https://pyvisa.readthedocs.io/en/latest/), but NI hardware don't use the IEE488.2 or SCPI standard. For this exists different official packages for different instruments for PCI and PXI devices included in NI DAQ or DAS series there is the [nidaqmx](https://nidaqmx-python.readthedocs.io/en/latest/), for another instruments like NI-scope, SWITCH, DMM etc. there is the [nimi-python](https://nimi-python.readthedocs.io/en/master/) the repository.
+To improve measurement systems we need to program different instruments, many can be programmed using [pyvisa](https://pyvisa.readthedocs.io/en/latest/), but NI hardware don't use the IEEE 488.2 or SCPI standard. For this exists different official packages for different instruments for PCI and PXI devices included in NI DAQ or DAS series there is the [nidaqmx](https://nidaqmx-python.readthedocs.io/en/latest/), for another instruments like NI-scope, SWITCH, DMM etc. there is the [nimi-python](https://nimi-python.readthedocs.io/en/master/) the repository.
 ## How to understand DAQ devices
 
 Typically, the most important features in these boards are acquisition or generation system that have BW ~ 300 kHz but have better accuracy than another options, with peripheral like counter, digital I/O, synchronization buses, etc. There is a lot of documentation on this, but it is not always easy to find, for this I give you and list with the order to read the document for better understanding.
