@@ -151,6 +151,9 @@ with nidaqmx.Task() as task:
 
 
 """
+Output terminal
+---------------
+
 nidaqmx driver version: DriverVersion(major_version=19, minor_version=6, update_version=0)
 
 Device:  Device(name=Dev1)
