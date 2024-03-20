@@ -1,6 +1,6 @@
 # Digital Output Examples
 
-Here you can find from the different waveform generated with different digital output method from PCI-6133. The waveform was adquired with a oscilloscope and short BNC wire between the scope and BNC-2110 terminal.
+Here you can find from the different waveform generated with different digital output method from PCI-6133. The waveform was adquired with a oscilloscope and short BNC wire (~15 cm) between the scope and BNC-2110 terminal.
 
 ## dig_out_task
 
