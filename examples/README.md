@@ -6,7 +6,7 @@ Here you can find a lot of differents examples in their respectives folder. I re
 
 Depend or your device orientation exist devices with only digital terminal or with only analog input terminals, etc but I recommend follow this order:
 
-1. **capacbilities examples**
+1. **capabilities examples**
 2. **ai examples**
 3. **di examples**
 4. **ci examples**
