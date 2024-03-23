@@ -76,6 +76,7 @@ with nidaqmx.Task(new_task_name="PCI-CO") as co_task, nidaqmx.Task(new_task_name
     
     path=r"TDMS\TDMS_trig\data_tdms_co.tdms"
     #Configure the TDMS mode
+    #overwrite the existing file with the new and data only can be accesesed from data.tmds
     ai_task.in_stream.configure_logging(file_path=path,
                                         logging_mode=nidaqmx.constants.LoggingMode.LOG,
                                         operation=nidaqmx.constants.LoggingOperation.CREATE_OR_REPLACE
