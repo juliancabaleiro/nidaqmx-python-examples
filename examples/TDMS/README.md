@@ -1,7 +1,7 @@
 # TDMS (Technical Data Management Streaming)
 
 In this mode you cand adquire data and trasnfer it direct from the hard disk.
-This files can be opened with (nptdms)[https://nptdms.readthedocs.io/en/stable/] python library or with the NI add on excel
+This files can be opened with [nptdms](https://nptdms.readthedocs.io/en/stable/) python library or with the NI add on excel
 
 ## nptdms
 
