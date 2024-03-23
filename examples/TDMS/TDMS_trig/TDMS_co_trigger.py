@@ -39,8 +39,7 @@ for ai in PCI_6133.ai_physical_chans:
     print(ai.name)
 
 with nidaqmx.Task(new_task_name="PCI-CO") as co_task, nidaqmx.Task(new_task_name="PCI-AI") as ai_task:
-    
-    #configuro el ctr0 para usar de trigger
+    #configure the ctr0 for trigger use
     co_task.co_channels.add_co_pulse_chan_time(
                                                 counter="/Dev1/Ctr0",
                                                 name_to_assign_to_channel="hola",
@@ -48,9 +47,9 @@ with nidaqmx.Task(new_task_name="PCI-CO") as co_task, nidaqmx.Task(new_task_name
                                                 idle_state=nidaqmx.constants.Level.LOW,
                                                 initial_delay=0.0,
                                                 low_time=1.0,
-                                                high_time=10.0)
-    
-    #Configuro la adquisicion #Dev1/ai0:4
+                                                high_time=10.0
+                                                )
+    #Configure the adquisition channels
     ai_task.ai_channels.add_ai_voltage_chan(physical_channel="Dev1/ai0:1",
                                             min_val=-10.0,
                                             max_val=10.0,
@@ -58,32 +57,34 @@ with nidaqmx.Task(new_task_name="PCI-CO") as co_task, nidaqmx.Task(new_task_name
                                             units=nidaqmx.constants.VoltageUnits.VOLTS
                                             )
     frecuencia=800_000
+    #Configure the timing of the adquistion board
     ai_task.timing.cfg_samp_clk_timing(rate=frecuencia,
-                                           active_edge=nidaqmx.constants.Edge.RISING,
-                                           sample_mode=nidaqmx.constants.AcquisitionType.CONTINUOUS,
-                                           samps_per_chan=frecuencia)
+                                       source="OnboardClock",
+                                       active_edge=nidaqmx.constants.Edge.RISING,
+                                       sample_mode=nidaqmx.constants.AcquisitionType.CONTINUOUS,
+                                       samps_per_chan=frecuencia
+                                      )
    
     #start trigger digital
-    ai_task.triggers.start_trigger.cfg_dig_edge_start_trig(
-                                                        trigger_source="/Dev1/PFI4",
-                                                        trigger_edge=nidaqmx.constants.Edge.RISING
-    )
-    
-    #Configuro el trigger pause que para la adquisicion (no soportart un trigger pause por edge)
+    ai_task.triggers.start_trigger.cfg_dig_edge_start_trig(trigger_source="/Dev1/PFI4",
+                                                           trigger_edge=nidaqmx.constants.Edge.RISING
+                                                          )
+    #Configure the trigger pause for the adquisition (Edge trigger pause isn't supported)
     ai_task.triggers.pause_trigger.trig_type=nidaqmx.constants.TriggerType.DIGITAL_LEVEL
     ai_task.triggers.pause_trigger.dig_lvl_src="/Dev1/PFI5"                                                                                                                                                                                                                                                                                                                                                                                                                                      
     ai_task.triggers.pause_trigger.dig_lvl_when=nidaqmx.constants.Level.LOW
     
     path=r"TDMS\TDMS_trig\data_tdms_co.tdms"
-
+    #Configure the TDMS mode
     ai_task.in_stream.configure_logging(file_path=path,
-                           logging_mode=nidaqmx.constants.LoggingMode.LOG,
-                           operation=nidaqmx.constants.LoggingOperation.CREATE_OR_REPLACE)
-    
-    #inicio la secuencia
+                                        logging_mode=nidaqmx.constants.LoggingMode.LOG,
+                                        operation=nidaqmx.constants.LoggingOperation.CREATE_OR_REPLACE
+                                       )
+    #start secuence
     ai_task.start()
     co_task.start()
     time.sleep(25)
+    #stop secuence
     co_task.stop()
     ai_task.stop()
 
