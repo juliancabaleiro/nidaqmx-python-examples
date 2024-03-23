@@ -29,9 +29,11 @@ with nidaqmx.Task(new_task_name="PCI-TDMS") as tdms_task:
                                               )
     #Timing adquisition configuration
     tdms_task.timing.cfg_samp_clk_timing(rate=10000,
+                                         source="OnboardClock",
                                          active_edge=nidaqmx.constants.Edge.RISING,
                                          sample_mode=nidaqmx.constants.AcquisitionType.CONTINUOUS,
-                                         samps_per_chan=10000)
+                                         samps_per_chan=10000
+                                        )
     path=r"TDMS\data.tdms"
     #configure de TDMS mode
     #overwrite the existing file with the new and data only can be accesesed from data.tmds
