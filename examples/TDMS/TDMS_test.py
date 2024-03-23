@@ -39,13 +39,13 @@ with nidaqmx.Task(new_task_name="PCI-TDMS") as tdms_task:
     #overwrite the existing file with the new and data only can be accesesed from data.tmds
     tdms_task.in_stream.configure_logging(file_path=path,
                                           logging_mode=nidaqmx.constants.LoggingMode.LOG,
-                                          operation=nidaqmx.constants.LoggingOperation.CREATE_OR_REPLACE)
-        
+                                          operation=nidaqmx.constants.LoggingOperation.CREATE_OR_REPLACE
+                                         )
     tiempo=30
     #start the adquisition in TDMS file
     tdms_task.start()
     time.sleep(tiempo)
-    #stop the task and the aduisition
+    #stop the task and the adquisition
     tdms_task.stop()
 
 """
