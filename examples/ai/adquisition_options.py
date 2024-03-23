@@ -33,6 +33,7 @@ with nidaqmx.Task(new_task_name="PCI-PY") as task:
     
     #add timing configuration from the task
     task.timing.cfg_samp_clk_timing(rate=10000,
+                                    source="OnboardClock",
                                     active_edge=nidaqmx.constants.Edge.RISING,
                                     sample_mode=nidaqmx.constants.AcquisitionType.CONTINUOUS,
                                     samps_per_chan=10000)
