@@ -3,7 +3,8 @@ Adquire analog waveform with ai0, ai1 in TDMS mode.
 Using start trigger and pause trigger for the adquisition
 Generate a trigger pulse by hardware with counter output ctr0.
 In this way the maximun pulse time generated is 160 s, with 
-the lower internal time base available 100 kHz 
+the lower internal time base available 100 kHz. Higher pulse
+time saturate the counter and raise an error.
 
 Signal
 ------
