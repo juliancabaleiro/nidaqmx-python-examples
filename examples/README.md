@@ -12,4 +12,4 @@ Depend or your device orientation exist devices with only digital terminal or wi
 4. **ci examples**
 5. **do examples**
 6. **co examples**
-7. **TMDS examples**
+7. **TDMS examples**
