@@ -5,8 +5,8 @@ With PCI-6133 through output PFI12/p2.4
 
 The output is Ctr0Out connected to CTR 0 OUT pin 2 in the pinout of 
 the PCI-6133. In the BNC-2110, accessories are routed to the
-PFI12/p2.4 (I can't find documentation in pinout of BNC-2110, but 
-find output different DAQ user manuals)
+PFI12/p2.4 (I can't find this in BNC-2110 documentation or DAQ S
+serie documentation, but find the output in DAQ M user manuals)
 
 For generating a pulse train, you need to set timing in implicit and 
 will generate pulses while the task is running. 
