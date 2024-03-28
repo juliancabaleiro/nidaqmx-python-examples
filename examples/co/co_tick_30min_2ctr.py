@@ -77,7 +77,7 @@ with nidaqmx.Task(new_task_name="PCI-CO") as co_task, nidaqmx.Task(new_task_name
                                                 low_ticks=tick_off,
                                                 high_ticks=tick_on)
 
-    print("CTR0 Time base source: ",co_task.co_channels.all.co_ctr_timebase_src)
+    print("\nCTR0 Time base source: ",co_task.co_channels.all.co_ctr_timebase_src)
     print("CTR0 output terminal: ",co_task.co_channels.all.co_pulse_term)
 
     print("\nCTR1 Time base source: ",co1_task.co_channels.all.co_ctr_timebase_src)
@@ -105,6 +105,7 @@ qout']
 
 Time base source for counter:  /Dev1/MasterTimebase
 Counter output terminal:  /Dev1/Ctr1Out
+
 CTR0 Time base source:  /Dev1/PFI0
 CTR0 output terminal:  /Dev1/Ctr0Out
 
