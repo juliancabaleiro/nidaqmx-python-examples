@@ -4,7 +4,7 @@ and save de adquisition from ai0 in multiple data.tdms files.
 In this mode the adquisition the board adquire the data and the buffers
 trasnfers the adquisition to hard disk.
 
-The size of 1 CH with fs 800 kHz tmds file are this:
+The RAM size of 1 CH with fs 800 kHz tmds file are this:
 3 min -> 1.07 Gb
 2 min -> 732 Mb
 1 min -> 366 Mb
@@ -16,11 +16,11 @@ The samps per file are related with buffer size determined by the board
 and only some values are work, here is a list of some:
 
 samps per ch ideally -> closest buffer samples per file
-10000 -> 12288
-20000 -> 20480
-30000 -> 32768
-40000 -> 40960
-50000 -> 53248
+               10000 -> 12288
+               20000 -> 20480
+               30000 -> 32768
+               40000 -> 40960
+               50000 -> 53248
 
 The data in each file not depend the samps_per_chan, only the 
 logging_samps_per_file and the time of acquisition
