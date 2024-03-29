@@ -4,7 +4,7 @@ and save de adquisition from ai0 in multiple data.tdms files.
 In this mode the adquisition the board adquire the data and the buffers
 trasnfers the adquisition to hard disk.
 
-How the size of 1 CH with fs 800 kHz tmds file are this:
+The size of 1 CH with fs 800 kHz tmds file are this:
 3 min -> 1.07 Gb
 2 min -> 732 Mb
 1 min -> 366 Mb
