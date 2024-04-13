@@ -12,8 +12,10 @@ The RAM size of 1 CH with fs 800 kHz tmds file are this:
 It is useful for long adquisition generate multiple tdms files.
 For activate this multi file generation only need to specify 
 the samps per file.
-The samps per file are related with buffer size determined by the board
-and only some values are work, here is a list of some:
+The samps per file are related with buffer size. If manually 
+configuring the buffer size choose a multiple of eigth times the
+sector size of the disk. For example, in my case the sector 
+is 512 bytes my buffer size is 4096. Here is a list of some values:
 
 samps per ch ideally -> closest buffer samples per file
                10000 -> 12288
