@@ -43,7 +43,7 @@ Here, you can see different icons between a real PCI-6133 device connected and a
 ![alt text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/simulated%20and%20real.png)
 
 ### Installation python package
-With the driver installed and with the device connected or simulated you can install [nidaqmx](https://nidaqmx-python.readthedocs.io/en/latest/) python package, I recommend using a [virtual environment](https://docs.python.org/3/library/venv.html) and install the requeriments.txt to run the examples.
+With the driver installed and with the device connected or simulated you can install [nidaqmx](https://nidaqmx-python.readthedocs.io/en/latest/) python package, I recommend using a [virtual environment](https://docs.python.org/3/library/venv.html) and install the requeriments.txt with python 3.7.9 32 bits to run the examples.
 
 ````shell
 python -m pip install nidaqmx
