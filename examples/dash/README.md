@@ -5,3 +5,7 @@ Here you can find simple examples of how to use graphical interface **dash** to 
 ## How to launch a Dash app
 
 Only run the desired python file and open the local host printed in terminal in your internet browser and can interact with the app.
+
+## dash_without_instrument.py
+
+![Alt Text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/dash-without-instrument.gif)
