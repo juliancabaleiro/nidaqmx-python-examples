@@ -6,4 +6,4 @@ To learn more about this, I recommend read [Super Fast python-Multiprocessing Gu
 ## Why parallelize?
 
 When you want to develop a measurement app that make long measurements, continuous measurement or want to do another things at the same time that the measurement were performed, need to parallelize the instrument communication with the main code (analysis, plot, save, GUI, etc.). Depending on your main program, you may receive a timeout error if you do not attend to the instrument correctly, and you may lose the communication with the instrument.   
-This can also be useful in cases of using (PyVISA)[https://pyvisa.readthedocs.io/en/latest/] or another package.
+This can also be useful in cases of using [PyVISA](https://pyvisa.readthedocs.io/en/latest/) or another package to control instruments.

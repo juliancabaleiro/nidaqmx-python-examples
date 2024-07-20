@@ -4,7 +4,13 @@ Here you can find simple examples of how to use graphical interface **dash** to 
 
 ## How to launch a Dash app
 
-Only run the desired python file and open the local host printed in terminal in your internet browser and can interact with the app.
+Only run the desired python file and open the local host printed in the terminal in your internet browser and can interact with the app.  
+```
+Dash is running on http://127.0.0.1:8050/
+
+ * Serving Flask app 'app'
+ * Debug mode: on
+```
 
 ## dash_without_instrument.py
 
