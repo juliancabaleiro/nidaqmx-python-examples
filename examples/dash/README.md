@@ -18,6 +18,10 @@ This example show a simple live update of data acquired by a simulated PCI board
 
 ![Alt Text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/dash_LiveUpdate_nidaqmx.gif)
 
+With the following diagram you can quickly understand the app.
+
+![Alt Text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/LiveUpdate-diagram.png)
+
 ### Use Multiprocessing Queue
 
 I don't recommend using multiprocessing Queue and Dash, I don't know why but it causes the app run slowly, freeze or crash without raising any exeptions. You can test this by comparing it with the following example.
