@@ -12,7 +12,7 @@ Typically, the most important features in these boards are acquisition or genera
 
 1. The **board specification**, this give you the hardware capabilities of your specific board.
 2. The **DAQ series user manual**, this give you an overview of DAQ system structure, general operation, different blocks, all peripherals that can be equiped and your possible uses or combination. Keep in mind that depending on the selected board exist different DAQ series, S-series, M-series, X-series, etc. and different user manuals.
-4. The **daqhelp.chm or NI-DAQmx Help**: Here you can find an explanation of how the programming logic is in these boards, the concepts of task, channels, etc. This document typically was installed with the NI drivers, in NI folder.
+4. The **daqhelp.chm or NI-DAQmx Help**: Here you can find an explanation of how the programming logic is in these boards, the concepts of task, channels, etc. This document typically was installed with the NI drivers, in NI folder or in [NI-DAQmx User Manual](https://www.ni.com/docs/en-US/bundle/ni-daqmx/page/user-manual-welcome.html).
 5. The  **C examples** Here you can find examples on how to program the board in C language. The python package and LabVIEW are wrapper for C library. These can be find some folders up the daq help. 
 6. The **DAQmx ANSI C** the documentation for the C library for these devices.
 
