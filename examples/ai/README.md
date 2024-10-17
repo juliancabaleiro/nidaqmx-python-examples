@@ -11,7 +11,7 @@ BNC-2110 the signal have noise.
 
 ![alt text](https://github.com/juliancabaleiro/nidaqmx-python-examples/blob/main/doc/images/ext_clk.png)
 
-## adquisition_options
+## acquisition_options
 
 ### Task method
 
