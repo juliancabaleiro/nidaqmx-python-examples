@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Aquire data with PCI board in a Subprocess and return the data array to
 the main process using Multiprocessing Array in a function aproach.
 """

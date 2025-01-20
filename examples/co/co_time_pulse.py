@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Generate a pulse train, specified time On and OFF, 
 2 s time ON, 1s time OFF, with /Dev1/MasterTimebase.
 With PCI-6133 through output PFI12/p2.4 

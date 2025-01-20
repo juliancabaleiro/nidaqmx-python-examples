@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Generate a pulse especified in tick's of basetime, 
 with 1800 s time ON, 36 s time OFF, using two counters,
 one as time base and the other for pulse generation.

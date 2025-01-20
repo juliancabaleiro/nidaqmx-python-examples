@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Minimal dash app with multiprocessing.
 Dash app start and stop the data visualization and
 Subprocess generates data continuosly

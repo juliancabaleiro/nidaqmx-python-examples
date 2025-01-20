@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Measure using PCI board a return the values using yield.
 """
 import nidaqmx

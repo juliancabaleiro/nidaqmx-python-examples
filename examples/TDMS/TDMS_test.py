@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Simple adquisition using a TDMS (Technical Data Management Streaming)
 and save de adquisition from ai0 and ai1 in data.tdms file.
 In this mode the adquisition the board adquire the data and the buffers

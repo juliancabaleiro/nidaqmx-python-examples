@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 This example code, list many of the virtual PXIe-4481  capabilities.
 Creates a task and makes a simple measurement of an analog channel.
 """

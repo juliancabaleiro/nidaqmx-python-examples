@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Simple live update using dash and NIDAQmx with simulated PCI board.
 The objective is obtain a fluid live update.
 Use a subprocess to control the instrument and communicate with dash

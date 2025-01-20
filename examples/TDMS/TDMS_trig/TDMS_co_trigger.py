@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Adquire analog waveform with ai0, ai1 in TDMS mode. 
 Using start trigger and pause trigger for the adquisition
 Generate a trigger pulse by hardware with counter output ctr0.

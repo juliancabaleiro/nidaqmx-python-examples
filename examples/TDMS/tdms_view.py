@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Open the data.tdms file and show all the data.
 Print in terminal all the herarchy of the measurement
 and some measurement, and then make a very simple plot 

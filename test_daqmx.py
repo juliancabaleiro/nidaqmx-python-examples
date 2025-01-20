@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Minimal test of the installation nidaqmx drivers.
 The PCI-6133 is real device connected to the PC
 The PXIe-4481 is a simulated device

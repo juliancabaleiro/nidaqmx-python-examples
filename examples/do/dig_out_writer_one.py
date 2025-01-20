@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 This example, generate digital pulses trough port0/line0. 
 Generate using the writer one method.
 See the readme to see the digital output waveform. 

@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Adquire digital signal, using task methods
 
 Digital signal input: 5 Vpk; offset 2.5 V; f 500 Hz;  D 50 %

@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Generate a single train, specified frencuency 0.5 Hz and, 
 duty cicle 50 %. With PCI-6133 through output PFI12/p2.4 
 

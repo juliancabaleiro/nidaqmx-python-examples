@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 This code measure analog signal in continuous mode using a for loop mehtod.
 It does not lose samples but has a problem with the first point. I
 try to solve it in different ways but I couldn't. 

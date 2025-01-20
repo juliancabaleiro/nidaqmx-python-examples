@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 Analog acquisition using analog pause trigger with level comparison
 in ai0.
 When the signal is exceeds 2.5 V, the acquisition stop and when the signal

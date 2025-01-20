@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 This example code, list many of the PCI 6133 capabilities.
 Creates a task and makes a simple measurement of an analog channel.
 """

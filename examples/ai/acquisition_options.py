@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 This python example, show differents method to adquire analog signals
 with PCI-6133 board.
 

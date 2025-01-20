@@ -1,4 +1,7 @@
 """
+@author: Julian Cabaleiro
+@repository: https://github.com/juliancabaleiro/nidaqmx-python-examples
+
 This example count edges from TLL signal connected to any PFI or
 internal base time that can be routed in ci_count_edges_term. In this case
 the counter count edges from external /Dev1/PFI0
